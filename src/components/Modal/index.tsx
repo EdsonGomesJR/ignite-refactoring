@@ -6,7 +6,7 @@ type ModalProps = {
   children: ReactNode;
   setIsOpen: () => void;
 };
-export function Modal2({ isOpen, children, setIsOpen }: ModalProps) {
+export function Modal({ isOpen, children, setIsOpen }: ModalProps) {
   const [modalStatus, setModalStatus] = useState(isOpen);
 
   useEffect(() => {
